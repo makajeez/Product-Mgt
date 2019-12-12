@@ -1,6 +1,7 @@
-# TodoApp
+# Events App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+`npm install` has to be run in the project directory to install the Node_modules needed.
 
 ## Development server
 
