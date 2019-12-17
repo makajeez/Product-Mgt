@@ -1,4 +1,4 @@
-# Events App
+# Product Management App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 `npm install` `npm install bootstrap font-awesome` has to be run in the project directory to install the Node_modules needed,the bootstrap and font-awesome for styling and glyphicon icons respectively.
