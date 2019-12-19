@@ -18,7 +18,9 @@ import { ProductDetailComponent } from './products/product-detail.component';
     FormsModule,
     RouterModule.forRoot([
       { path: 'home', component: WelcomeComponent },
-      { path: 'products', component: ProductListComponent }
+      { path: 'products', component: ProductListComponent },
+      { path: 'products/:id', component: ProductListComponent },
+      { path: '', pathMatch: 'full', redirectTo: 'home' }
     ])
   ],
   declarations: [
