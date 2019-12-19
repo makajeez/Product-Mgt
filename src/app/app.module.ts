@@ -9,19 +9,24 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { StarComponent } from './shared/star/star.component';
 import { ProductService } from './product-list/product.service';
 import { WelcomeComponent } from './home/welcome.component';
+import { ProductDetailComponent } from './products/product-detail.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([
+      { path: 'home', component: WelcomeComponent },
+      { path: 'products', component: ProductListComponent }
+    ])
   ],
   declarations: [
     AppComponent,
     ProductListComponent,
     StarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ProductDetailComponent
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
