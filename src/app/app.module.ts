@@ -19,7 +19,7 @@ import { ProductDetailComponent } from './products/product-detail.component';
     RouterModule.forRoot([
       { path: 'home', component: WelcomeComponent },
       { path: 'products', component: ProductListComponent },
-      { path: 'products/:id', component: ProductListComponent },
+      { path: 'products/:id', component: ProductDetailComponent },
       { path: '', pathMatch: 'full', redirectTo: 'home' }
     ])
   ],
