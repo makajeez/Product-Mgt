@@ -4,7 +4,8 @@ import { IProduct } from '../product-list/product';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { tap } from 'rxjs/operators';
+import { tap, catchError } from 'rxjs/operators';
+import { ProductService } from '../product-list/product.service';
 
 
 @Component({
@@ -32,7 +33,6 @@ export class ProductDetailComponent implements OnInit {
     starRating: 3.2,
     imageUrl: 'assets/images/leaf_rake.png'
    };
-
 }
 }
 
