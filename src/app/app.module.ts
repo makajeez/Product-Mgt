@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { StarComponent } from './shared/star/star.component';
 import { ProductService } from './product-list/product.service';
+import { WelcomeComponent } from './home/welcome.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { ProductService } from './product-list/product.service';
   declarations: [
     AppComponent,
     ProductListComponent,
-    StarComponent
+    StarComponent,
+    WelcomeComponent
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
