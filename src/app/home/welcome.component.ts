@@ -6,5 +6,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent {
- pageTitle: string = 'Welcome Page';
+ pageTitle = 'Welcome Page';
   }

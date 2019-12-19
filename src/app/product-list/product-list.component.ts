@@ -3,7 +3,7 @@ import { IProduct } from './product';
 import { ProductService } from './product.service';
 
 @Component({
-  selector: 'app-product-list',
+  selector: 'pm-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
@@ -37,16 +37,16 @@ export class ProductListComponent implements OnInit {
   toggleImage(): void {
     this.showImage = !this.showImage;
   }
-  
+
   ngOnInit(): void {
     this.productService.getProducts().subscribe({
       next: products => {
-        this.products = products
+        this.products = products;
         this.filteredProducts = this.products;
       },
       error: err => this.errorMessage = err
     });
 
    }
- 
+
 }
