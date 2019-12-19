@@ -2,11 +2,6 @@ import { Component, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IProduct } from '../product-list/product';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
-import { tap, catchError } from 'rxjs/operators';
-import { ProductService } from '../product-list/product.service';
-
 
 @Component({
   templateUrl: './product-detail.component.html',

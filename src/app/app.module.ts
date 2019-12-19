@@ -20,7 +20,7 @@ import { ProductDetailGuard } from './products/product-detail.guard';
     RouterModule.forRoot([
       { path: 'home', component: WelcomeComponent },
       { path: 'products', component: ProductListComponent },
-      { path: 'products/:id', canActivate:[ProductDetailGuard], component: ProductDetailComponent },
+      { path: 'products/:id', canActivate: [ProductDetailGuard], component: ProductDetailComponent },
       { path: '', pathMatch: 'full', redirectTo: 'home' }
     ])
   ],
